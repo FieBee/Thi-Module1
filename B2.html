@@ -16,13 +16,13 @@
         if (index < 0 || index > arr.length) {
             return arr;
         } else {
-            arr[index] = x;
+            arr.splice(index,0,x);
             return arr;
         }
     }
     let arr1 = [1,2,3,4,5,6,7]
     browseArr(arr1)
-    document.write(insertNumberToArray(arr1,5,7))
+    document.write(insertNumberToArray(arr1,5,1))
     
 </script>
 </body>
